@@ -5,3 +5,10 @@ public class Main {
         System.out.println("Hello, World!");
     }
 }
+
+public class Main {
+	public static void main(String[]args) {
+		String name = "Maria";
+		System.out.println("Hello"+ name);
+	}
+}
