@@ -80,13 +80,25 @@ package com.maria.myjavaproject;
 //	}
 //}
 
+//public class Main{
+//	public static void main(String[] args) {
+//		int x = 5, y = 6, z = 50;
+//		System.out.println(x + y + z);
+//		
+//		int a, b, c;
+//		a = b = c = 50;
+//		System.out.println(a + b + c);
+//	}
+//}
+
 public class Main{
 	public static void main(String[] args) {
-		int x = 5, y = 6, z = 50;
-		System.out.println(x + y + z);
+		//Good
+		int minutesPerHour = 60;
 		
-		int a, b, c;
-		a = b = c = 50;
-		System.out.println(a + b + c);
+		//OK, but so easy to understand what m actually is
+		int m = 60;
+		System.out.println(minutesPerHour);
+		System.out.println(m);
 	}
 }
