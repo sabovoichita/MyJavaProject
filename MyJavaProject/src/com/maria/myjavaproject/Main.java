@@ -256,30 +256,52 @@ package com.maria.myjavaproject;
 //}
 
 //Java var
-import java.util.ArrayList;
-public class Main{ 
+//import java.util.ArrayList;
+//public class Main{ 
+//	public static void main(String[] args) {
+//		var x = 5; // x is and int
+//		var myNum = 5; //int
+//		var myDouble = 9.98; //double
+//		var myChar = 'D'; //char
+//		var myBoolean = true; //Boolean
+//		var myString = "Hello"; //String
+//		//without var
+////		ArrayList<String> cars = new ArrayList<String>();
+//		//with var
+//		var cars = new ArrayList<String>();
+//		cars.add("Volvo");
+//		cars.add("BMW");
+//		cars.add("Ford");
+//		cars.add("Mazda");
+//		
+//		System.out.println(x);
+//		System.out.println(myNum);
+//		System.out.println(myDouble);
+//		System.out.println(myChar);
+//		System.out.println(myBoolean);
+//		System.out.println(myString);
+//		System.out.println(cars);
+//	}
+//}
+
+//Java Type Casting
+public class Main{
 	public static void main(String[] args) {
-		var x = 5; // x is and int
-		var myNum = 5; //int
-		var myDouble = 9.98; //double
-		var myChar = 'D'; //char
-		var myBoolean = true; //Boolean
-		var myString = "Hello"; //String
-		//without var
-//		ArrayList<String> cars = new ArrayList<String>();
-		//with var
-		var cars = new ArrayList<String>();
-		cars.add("Volvo");
-		cars.add("BMW");
-		cars.add("Ford");
-		cars.add("Mazda");
+//		Widening Casting (automatic) - converting a smaller type to a larger type size
+//		byte -> short -> char -> int -> long -> float -> double
+		int myInt = 9;
+		double myDouble = myInt; // Automatic casting: int to double
+//		Narrowing Casting (manual) - converting a larger type to a smaller type size
+//		double -> float -> long -> int -> char -> short -> byte
+		double myDouble1 = 9.78d;
+		int myInt1 = (int) myDouble1; //Manual casting: double to int
 		
-		System.out.println(x);
-		System.out.println(myNum);
-		System.out.println(myDouble);
-		System.out.println(myChar);
-		System.out.println(myBoolean);
-		System.out.println(myString);
-		System.out.println(cars);
+		System.out.println(myInt); // 0
+		System.out.println(myDouble); //Outputs 9.0
+		
+		System.out.println(myDouble1); //9.78
+		System.out.println(myInt1); //9
+
+		
 	}
 }
