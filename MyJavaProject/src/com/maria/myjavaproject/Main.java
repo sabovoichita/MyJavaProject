@@ -157,27 +157,59 @@ package com.maria.myjavaproject;
 //	}
 //}
 
+//public class Main{
+//	public static void main(String[] args) {
+//		int myNum = 5; //integer(whole number)
+//		float myFloatNum = 5.99f; //floating number
+//		char myLetter = 'D'; //character
+//		boolean myBool = true; //boolean
+//		String myText = "Hello"; //String
+//		
+//		System.out.println(myNum);
+//		System.out.println(myFloatNum);
+//		System.out.println(myLetter);
+//		System.out.println(myBool);
+//		System.out.println(myText);
+//		
+//		int myNum1=5; //integer
+////		myNum = "hello"; //Error: cannot assign a String to an integer
+//		
+//		String myText1 = "Hi"; //a String
+////		myText = 123; //Error: cannot assign a number to a String
+//		
+//		System.out.println(myNum1);
+//		System.out.println(myText1);
+//	}
+//}
+
 public class Main{
 	public static void main(String[] args) {
-		int myNum = 5; //integer(whole number)
-		float myFloatNum = 5.99f; //floating number
-		char myLetter = 'D'; //character
-		boolean myBool = true; //boolean
-		String myText = "Hello"; //String
+		// byte
+		byte myNum = 100;
+		// short
+		short myNum1=5000;
+		// int from -2147483648 to 2147483647
+		int myNum2 = 10000;
+		// long from -9223372036854775808 to 9223372036854775807
+		long myNum3 = 150000000000L;
+		// float ends with f, is only 6-7 decimal digits
+		float myNum4 = 5.75f;
+		// double ends with d, about 16 digits.
+		double myNum5 = 10.99d;
+		//float e to indicate the power of 10
+		float f1 = 35e3f;
+		//double
+		double d1=12E4d;
+		
 		
 		System.out.println(myNum);
-		System.out.println(myFloatNum);
-		System.out.println(myLetter);
-		System.out.println(myBool);
-		System.out.println(myText);
-		
-		int myNum1=5; //integer
-//		myNum = "hello"; //Error: cannot assign a String to an integer
-		
-		String myText1 = "Hi"; //a String
-//		myText = 123; //Error: cannot assign a number to a String
-		
 		System.out.println(myNum1);
-		System.out.println(myText1);
+		System.out.println(myNum2);
+		System.out.println(myNum3);
+		System.out.println(myNum4);
+		System.out.println(myNum5);
+		System.out.println(f1);
+		System.out.println(d1);
+		
 	}
 }
