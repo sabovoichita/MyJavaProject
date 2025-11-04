@@ -394,37 +394,46 @@ package com.maria.myjavaproject;
 //}
 
 //Assignment Operators
+//public class Main{
+//	public static void main(String[] args) {
+//		int x = 5;
+//		System.out.println("x: " + x); //5
+//		x += 3;
+//		System.out.println("x += 3: "+ x);//8
+//		x -= 3;
+//		System.out.println("x -= 3: " + x); //5
+//		x *= 3; 
+//		System.out.println("x */ 3: " + x); //15
+//		x /= 3;
+//		System.out.println("x /= 3: " + x); //5
+//		x = 5;
+//		x %= 3;
+//		System.out.println("x %= 3: " + x); //2
+//		x = 5;
+//		x &= 3;
+//		System.out.println("x &= 3: " + x); //1
+//		x = 5;
+//		x |= 3;
+//		System.out.println("x |= 3: " + x); //7
+//		x = 5;
+//		x ^= 3;
+//		System.out.println("x ^= 3: " + x); //6
+//		x = 5;
+//		x >>= 3;
+//		System.out.println("x >>= 3: " + x); //0
+//		x = 5;
+//		x <<= 3;
+//		System.out.println("x <<= 3: " + x); //40
+//		
+//		
+//	}
+//}
+
+//Tracking Savings
 public class Main{
 	public static void main(String[] args) {
-		int x = 5;
-		System.out.println("x: " + x); //5
-		x += 3;
-		System.out.println("x += 3: "+ x);//8
-		x -= 3;
-		System.out.println("x -= 3: " + x); //5
-		x *= 3; 
-		System.out.println("x */ 3: " + x); //15
-		x /= 3;
-		System.out.println("x /= 3: " + x); //5
-		x = 5;
-		x %= 3;
-		System.out.println("x %= 3:" + x); //2
-		x = 5;
-		x &= 3;
-		System.out.println("x &= 3:" + x); //1
-		x = 5;
-		x |= 3;
-		System.out.println("x |= 3:" + x); //7
-		x = 5;
-		x ^= 3;
-		System.out.println("x ^= 3:" + x); //6
-		x = 5;
-		x >>= 3;
-		System.out.println("x >>= 3:" + x); //0
-		x = 5;
-		x <<= 3;
-		System.out.println("x <<= 3:" + x); //40
-		
-		
+		int savings = 100;
+		savings += 50; //add 50 to savings
+		System.out.println("Total savings: " + savings); //150
 	}
 }
