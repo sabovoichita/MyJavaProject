@@ -240,17 +240,46 @@ package com.maria.myjavaproject;
 //	}
 //}
 
-public class Main{
+//public class Main{
+//	public static void main(String[] args) {
+//		// Create variables of different data types
+//		int items = 50;
+//		float costPerItem = 9.99f;
+//		float totalCost = items * costPerItem;
+//		char currency = '$';
+//		
+//		//Print variables
+//		System.out.println("Number of items: " + items);
+//		System.out.println("Cost oer item: " + costPerItem + currency);
+//		System.out.println("Total cost= "+ totalCost + currency);
+//	}
+//}
+
+//Java var
+import java.util.ArrayList;
+public class Main{ 
 	public static void main(String[] args) {
-		// Create variables of different data types
-		int items = 50;
-		float costPerItem = 9.99f;
-		float totalCost = items * costPerItem;
-		char currency = '$';
+		var x = 5; // x is and int
+		var myNum = 5; //int
+		var myDouble = 9.98; //double
+		var myChar = 'D'; //char
+		var myBoolean = true; //Boolean
+		var myString = "Hello"; //String
+		//without var
+//		ArrayList<String> cars = new ArrayList<String>();
+		//with var
+		var cars = new ArrayList<String>();
+		cars.add("Volvo");
+		cars.add("BMW");
+		cars.add("Ford");
+		cars.add("Mazda");
 		
-		//Print variables
-		System.out.println("Number of items: " + items);
-		System.out.println("Cost oer item: " + costPerItem + currency);
-		System.out.println("Total cost= "+ totalCost + currency);
+		System.out.println(x);
+		System.out.println(myNum);
+		System.out.println(myDouble);
+		System.out.println(myChar);
+		System.out.println(myBoolean);
+		System.out.println(myString);
+		System.out.println(cars);
 	}
 }
