@@ -65,17 +65,28 @@ package com.maria.myjavaproject;
 //	}
 //}
 
+//public class Main{
+//	public static void main(String[] args) {
+//		String firstName = "Maria ";
+//		String lastName = "Truscai";
+//		String fullName = firstName + lastName;
+//		System.out.println(fullName);
+//		
+//		int x = 5;
+//		int y = 6;
+//		System.out.println("The sum is " + x + y);
+//		System.out.println("The sum is: " + (x + y));
+//		
+//	}
+//}
+
 public class Main{
 	public static void main(String[] args) {
-		String firstName = "Maria ";
-		String lastName = "Truscai";
-		String fullName = firstName + lastName;
-		System.out.println(fullName);
+		int x = 5, y = 6, z = 50;
+		System.out.println(x + y + z);
 		
-		int x = 5;
-		int y = 6;
-		System.out.println("The sum is " + x + y);
-		System.out.println("The sum is: " + (x + y));
-		
+		int a, b, c;
+		a = b = c = 50;
+		System.out.println(a + b + c);
 	}
 }
