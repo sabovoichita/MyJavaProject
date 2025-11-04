@@ -107,17 +107,34 @@ package com.maria.myjavaproject;
 //	}
 //}
 
+//public class Main{
+//	public static void main(String[] args) {
+//		final int myNum = 15;
+//		//myNum = 20;//Error; cannot assign a value to a final variable
+//		System.out.println(myNum);
+//		
+//		//Note: By convention, final variables in Java are usually written 
+//		//in upper case (e.g. BIRTHYEAR)
+//		final int MINUTES_PER_HOUR = 60;
+//		final int BIRTHYEAR = 1980;
+//		System.out.println(MINUTES_PER_HOUR);
+//		System.out.println(BIRTHYEAR);
+//	}
+//}
+
 public class Main{
 	public static void main(String[] args) {
-		final int myNum = 15;
-		//myNum = 20;//Error; cannot assign a value to a final variable
-		System.out.println(myNum);
-		
-		//Note: By convention, final variables in Java are usually written 
-		//in upper case (e.g. BIRTHYEAR)
-		final int MINUTES_PER_HOUR = 60;
-		final int BIRTHYEAR = 1980;
-		System.out.println(MINUTES_PER_HOUR);
-		System.out.println(BIRTHYEAR);
+		//Student data
+		String studentName = "John Doe";
+		int studentID = 15;
+		int studentAge= 24;
+		float studentFee = 72.35f;
+		char studentGrade = 'B';
+		//Print variables
+		System.out.println("Student name: " + studentName);
+		System.out.println("Student ID: " + studentID);
+		System.out.println("Student age: "+ studentAge);
+		System.out.println("Student fee: " + studentFee);
+		System.out.println("Student grade: " + studentGrade);
 	}
 }
