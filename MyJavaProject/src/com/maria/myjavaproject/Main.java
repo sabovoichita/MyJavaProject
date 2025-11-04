@@ -307,18 +307,67 @@ package com.maria.myjavaproject;
 //}
 
 //Calculate the percentage of a user's score in relation to the maximum score in a game
+//public class Main{
+//	public static void main(String[] args) {
+//		//Set the maximum possible score in the game to 500
+//		int maxScore = 500;
+//		
+//		//The actual score of the user
+//		int userScore = 423;
+//		/*Calculate the percentage of the user's score in relation to the maximum
+//		 * available score.
+//		 * Convert userScore to double to make sure that the division is accurate*/
+//		double percentage = (double) userScore / maxScore * 100.0d;
+//		
+//		System.out.println("User's percentage is: " + percentage + "%");
+//	}
+//}
+
+//Java Operators
 public class Main{
 	public static void main(String[] args) {
-		//Set the maximum possible score in the game to 500
-		int maxScore = 500;
+		int a = 100 + 50;
+		int sum1 = 100 + 50;
+		int sum2 = sum1 + 250;
+		int sum3 = sum2 + sum2;
+		int x = 10;
+		int y = 3;
+		int z = 5;
+		z++;
+		int a1 = 10;
+		int b1 = 3;
 		
-		//The actual score of the user
-		int userScore = 423;
-		/*Calculate the percentage of the user's score in relation to the maximum
-		 * available score.
-		 * Convert userScore to double to make sure that the division is accurate*/
-		double percentage = (double) userScore / maxScore * 100.0d;
+		double c = 10.0d;
+		double d = 3.0d;
 		
-		System.out.println("User's percentage is: " + percentage + "%");
+		int x1 = 5;
+		++x1; //Increment x1 by 1
+		
+		int x2 = 5;
+		--x2; //Decrement x2 by 1
+		
+		
+		System.out.println("a: " + a);
+		System.out.println("sum1: " + sum1);
+		System.out.println("sum2: " + sum2);
+		System.out.println("sum3: " + sum3);
+		System.out.println("x: " + x);
+		System.out.println("y: "+ y);
+		System.out.println("x + y: " + (x + y)); //13
+		System.out.println("x - y: "+ (x - y)); //7
+		System.out.println("x * y: " + (x * y)); //30;
+		System.out.println("x / y: "+ (x / y));//3
+		System.out.println("x % y: " + (x % y)); //1
+		System.out.println("z: " + z); //6
+		--z;
+		System.out.println("z: " + z); //5
+		System.out.println("a1: " + a1);
+		System.out.println("b1: " + b1);
+		System.out.println("a1 / b1: "+ (a1 / b1));
+		System.out.println("c / d: "+ (x / d));
+		System.out.println("x1: " + x1); //6
+		System.out.println("x2: "+ x2);//4
+		++x2;
+		System.out.println("x2: "+ x2);// x2 becomes 5 again
 	}
 }
