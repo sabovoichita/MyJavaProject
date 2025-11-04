@@ -91,14 +91,33 @@ package com.maria.myjavaproject;
 //	}
 //}
 
+//public class Main{
+//	public static void main(String[] args) {
+//		//Good
+//		int minutesPerHour = 60;
+//		
+//		//OK, but so easy to understand what m actually is
+//		int m = 60;
+//		System.out.println(minutesPerHour);
+//		System.out.println(m);
+//		
+//		// int2ndNumber=3; //Cannot start with a digit
+//		// int my var = 10; //Cannot contain spaces
+//		// int int = 30; //Cannot use reserved keywords
+//	}
+//}
+
 public class Main{
 	public static void main(String[] args) {
-		//Good
-		int minutesPerHour = 60;
+		final int myNum = 15;
+		//myNum = 20;//Error; cannot assign a value to a final variable
+		System.out.println(myNum);
 		
-		//OK, but so easy to understand what m actually is
-		int m = 60;
-		System.out.println(minutesPerHour);
-		System.out.println(m);
+		//Note: By convention, final variables in Java are usually written 
+		//in upper case (e.g. BIRTHYEAR)
+		final int MINUTES_PER_HOUR = 60;
+		final int BIRTHYEAR = 1980;
+		System.out.println(MINUTES_PER_HOUR);
+		System.out.println(BIRTHYEAR);
 	}
 }
