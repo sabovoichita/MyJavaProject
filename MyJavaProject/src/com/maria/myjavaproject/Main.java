@@ -40,27 +40,42 @@ package com.maria.myjavaproject;
 //		
 //	}
 //}
+//
+//public class Main{
+//	public static void main(String[] args) {
+//		String name = "Maria";
+//		System.out.println(name);
+//		
+//		int myNum = 15;
+//		System.out.println(myNum);
+//		
+//		int otherNum;
+//		otherNum = 20;
+//		System.out.println(otherNum);
+//		
+//		//Change the value of myNum from 15 to 25;
+//		//int myNum=15;
+//		myNum=20;
+//		System.out.println(myNum);
+//		
+//		//final int myNum = 15; // will generate an error:
+//		myNum=200;
+//		System.out.println(myNum);
+//		
+//	}
+//}
 
 public class Main{
 	public static void main(String[] args) {
-		String name = "Maria";
-		System.out.println(name);
+		String firstName = "Maria ";
+		String lastName = "Truscai";
+		String fullName = firstName + lastName;
+		System.out.println(fullName);
 		
-		int myNum = 15;
-		System.out.println(myNum);
-		
-		int otherNum;
-		otherNum = 20;
-		System.out.println(otherNum);
-		
-		//Change the value of myNum from 15 to 25;
-		//int myNum=15;
-		myNum=20;
-		System.out.println(myNum);
-		
-		//final int myNum = 15; // will generate an error:
-		myNum=200;
-		System.out.println(myNum);
+		int x = 5;
+		int y = 6;
+		System.out.println("The sum is " + x + y);
+		System.out.println("The sum is: " + (x + y));
 		
 	}
 }
