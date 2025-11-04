@@ -182,34 +182,44 @@ package com.maria.myjavaproject;
 //	}
 //}
 
+//public class Main{
+//	public static void main(String[] args) {
+//		// byte
+//		byte myNum = 100;
+//		// short
+//		short myNum1=5000;
+//		// int from -2147483648 to 2147483647
+//		int myNum2 = 10000;
+//		// long from -9223372036854775808 to 9223372036854775807
+//		long myNum3 = 150000000000L;
+//		// float ends with f, is only 6-7 decimal digits
+//		float myNum4 = 5.75f;
+//		// double ends with d, about 16 digits.
+//		double myNum5 = 10.99d;
+//		//float e to indicate the power of 10
+//		float f1 = 35e3f;
+//		//double
+//		double d1=12E4d;
+//		
+//		
+//		System.out.println(myNum);
+//		System.out.println(myNum1);
+//		System.out.println(myNum2);
+//		System.out.println(myNum3);
+//		System.out.println(myNum4);
+//		System.out.println(myNum5);
+//		System.out.println(f1);
+//		System.out.println(d1);
+//		
+//	}
+//}
+
 public class Main{
 	public static void main(String[] args) {
-		// byte
-		byte myNum = 100;
-		// short
-		short myNum1=5000;
-		// int from -2147483648 to 2147483647
-		int myNum2 = 10000;
-		// long from -9223372036854775808 to 9223372036854775807
-		long myNum3 = 150000000000L;
-		// float ends with f, is only 6-7 decimal digits
-		float myNum4 = 5.75f;
-		// double ends with d, about 16 digits.
-		double myNum5 = 10.99d;
-		//float e to indicate the power of 10
-		float f1 = 35e3f;
-		//double
-		double d1=12E4d;
-		
-		
-		System.out.println(myNum);
-		System.out.println(myNum1);
-		System.out.println(myNum2);
-		System.out.println(myNum3);
-		System.out.println(myNum4);
-		System.out.println(myNum5);
-		System.out.println(f1);
-		System.out.println(d1);
+		boolean isJavaFun = true;
+		boolean isFishTasty = false;
+		System.out.println(isJavaFun);
+		System.out.println(isFishTasty);
 		
 	}
 }
