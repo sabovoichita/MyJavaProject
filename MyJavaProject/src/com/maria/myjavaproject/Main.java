@@ -28,14 +28,39 @@ package com.maria.myjavaproject;
 	}
 }
  */
+
 //This is a comment
+//public class Main{
+//	public static void main(String[] args) {
+//		System.out.println(3);
+//		System.out.println(358);
+//		System.out.println(123456);
+//		System.out.println(3 + 3);
+//		System.out.println(2 * 6);
+//		
+//	}
+//}
+
 public class Main{
 	public static void main(String[] args) {
-		System.out.println(3);
-		System.out.println(358);
-		System.out.println(123456);
-		System.out.println(3 + 3);
-		System.out.println(2 * 6);
+		String name = "Maria";
+		System.out.println(name);
+		
+		int myNum = 15;
+		System.out.println(myNum);
+		
+		int otherNum;
+		otherNum = 20;
+		System.out.println(otherNum);
+		
+		//Change the value of myNum from 15 to 25;
+		//int myNum=15;
+		myNum=20;
+		System.out.println(myNum);
+		
+		//final int myNum = 15; // will generate an error:
+		myNum=200;
+		System.out.println(myNum);
 		
 	}
 }
