@@ -373,22 +373,58 @@ package com.maria.myjavaproject;
 //}
 
 //Counting people
+//public class Main{
+//	public static void main(String[] args) {
+//		int peopleInRoom = 0;
+//		
+//		System.out.println("people in room: "+ peopleInRoom); //0
+//		// 3 people enter
+//		peopleInRoom++;
+//		peopleInRoom++;
+//		peopleInRoom++;
+//		
+//		System.out.println("3 people enter: "+ peopleInRoom); //3
+//		
+//		// 1 person leaves
+//		peopleInRoom--;
+//		
+//		System.out.println("1 person leaves: "+ peopleInRoom);//2
+//		
+//	}
+//}
+
+//Assignment Operators
 public class Main{
 	public static void main(String[] args) {
-		int peopleInRoom = 0;
+		int x = 5;
+		System.out.println("x: " + x); //5
+		x += 3;
+		System.out.println("x += 3: "+ x);//8
+		x -= 3;
+		System.out.println("x -= 3: " + x); //5
+		x *= 3; 
+		System.out.println("x */ 3: " + x); //15
+		x /= 3;
+		System.out.println("x /= 3: " + x); //5
+		x = 5;
+		x %= 3;
+		System.out.println("x %= 3:" + x); //2
+		x = 5;
+		x &= 3;
+		System.out.println("x &= 3:" + x); //1
+		x = 5;
+		x |= 3;
+		System.out.println("x |= 3:" + x); //7
+		x = 5;
+		x ^= 3;
+		System.out.println("x ^= 3:" + x); //6
+		x = 5;
+		x >>= 3;
+		System.out.println("x >>= 3:" + x); //0
+		x = 5;
+		x <<= 3;
+		System.out.println("x <<= 3:" + x); //40
 		
-		System.out.println("people in room: "+ peopleInRoom); //0
-		// 3 people enter
-		peopleInRoom++;
-		peopleInRoom++;
-		peopleInRoom++;
-		
-		System.out.println("3 people enter: "+ peopleInRoom); //3
-		
-		// 1 person leaves
-		peopleInRoom--;
-		
-		System.out.println("1 person leaves: "+ peopleInRoom);//2
 		
 	}
 }
