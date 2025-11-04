@@ -285,23 +285,40 @@ package com.maria.myjavaproject;
 //}
 
 //Java Type Casting
+//public class Main{
+//	public static void main(String[] args) {
+////		Widening Casting (automatic) - converting a smaller type to a larger type size
+////		byte -> short -> char -> int -> long -> float -> double
+//		int myInt = 9;
+//		double myDouble = myInt; // Automatic casting: int to double
+////		Narrowing Casting (manual) - converting a larger type to a smaller type size
+////		double -> float -> long -> int -> char -> short -> byte
+//		double myDouble1 = 9.78d;
+//		int myInt1 = (int) myDouble1; //Manual casting: double to int
+//		
+//		System.out.println(myInt); // 0
+//		System.out.println(myDouble); //Outputs 9.0
+//		
+//		System.out.println(myDouble1); //9.78
+//		System.out.println(myInt1); //9
+//
+//		
+//	}
+//}
+
+//Calculate the percentage of a user's score in relation to the maximum score in a game
 public class Main{
 	public static void main(String[] args) {
-//		Widening Casting (automatic) - converting a smaller type to a larger type size
-//		byte -> short -> char -> int -> long -> float -> double
-		int myInt = 9;
-		double myDouble = myInt; // Automatic casting: int to double
-//		Narrowing Casting (manual) - converting a larger type to a smaller type size
-//		double -> float -> long -> int -> char -> short -> byte
-		double myDouble1 = 9.78d;
-		int myInt1 = (int) myDouble1; //Manual casting: double to int
+		//Set the maximum possible score in the game to 500
+		int maxScore = 500;
 		
-		System.out.println(myInt); // 0
-		System.out.println(myDouble); //Outputs 9.0
+		//The actual score of the user
+		int userScore = 423;
+		/*Calculate the percentage of the user's score in relation to the maximum
+		 * available score.
+		 * Convert userScore to double to make sure that the division is accurate*/
+		double percentage = (double) userScore / maxScore * 100.0d;
 		
-		System.out.println(myDouble1); //9.78
-		System.out.println(myInt1); //9
-
-		
+		System.out.println("User's percentage is: " + percentage + "%");
 	}
 }
