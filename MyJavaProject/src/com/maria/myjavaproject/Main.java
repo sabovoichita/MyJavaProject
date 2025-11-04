@@ -139,20 +139,45 @@ package com.maria.myjavaproject;
 //	}
 //}
 
+//public class Main{
+//	public static void main(String[] args) {
+//		// Calculate the area of a rectangle
+//		// Create integer variables
+//		int length = 4;
+//		int width = 6;
+//		int area;
+//		 
+//		//Calculate the are of a rectangle 
+//		area = length + width;
+//		
+//		//Print variables
+//		System.out.println("Length is: "+ length);
+//		System.out.println("Width is: "+ width);
+//		System.out.println("Area of the rectangle is: "+ area);
+//	}
+//}
+
 public class Main{
 	public static void main(String[] args) {
-		// Calculate the area of a rectangle
-		// Create integer variables
-		int length = 4;
-		int width = 6;
-		int area;
-		 
-		//Calculate the are of a rectangle 
-		area = length + width;
+		int myNum = 5; //integer(whole number)
+		float myFloatNum = 5.99f; //floating number
+		char myLetter = 'D'; //character
+		boolean myBool = true; //boolean
+		String myText = "Hello"; //String
 		
-		//Print variables
-		System.out.println("Length is: "+ length);
-		System.out.println("Width is: "+ width);
-		System.out.println("Area of the rectangle is: "+ area);
+		System.out.println(myNum);
+		System.out.println(myFloatNum);
+		System.out.println(myLetter);
+		System.out.println(myBool);
+		System.out.println(myText);
+		
+		int myNum1=5; //integer
+//		myNum = "hello"; //Error: cannot assign a String to an integer
+		
+		String myText1 = "Hi"; //a String
+//		myText = 123; //Error: cannot assign a number to a String
+		
+		System.out.println(myNum1);
+		System.out.println(myText1);
 	}
 }
