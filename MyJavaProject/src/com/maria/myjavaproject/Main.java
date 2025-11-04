@@ -224,18 +224,33 @@ package com.maria.myjavaproject;
 //	}
 //}
 
+//public class Main{
+//	public static void main(String[] args) {
+//		char myGrade = 'B';
+//		//Display ASCII values
+//		char myVar1 = 65, myVar2 = 66, myVar3 = 67;
+//		//Strings
+//		String greeting = "Hello World";
+//		
+//		System.out.println(myGrade);
+//		System.out.println(myVar1);
+//		System.out.println(myVar2);
+//		System.out.println(myVar3);
+//		System.out.println(greeting);
+//	}
+//}
+
 public class Main{
 	public static void main(String[] args) {
-		char myGrade = 'B';
-		//Display ASCII values
-		char myVar1 = 65, myVar2 = 66, myVar3 = 67;
-		//Strings
-		String greeting = "Hello World";
+		// Create variables of different data types
+		int items = 50;
+		float costPerItem = 9.99f;
+		float totalCost = items * costPerItem;
+		char currency = '$';
 		
-		System.out.println(myGrade);
-		System.out.println(myVar1);
-		System.out.println(myVar2);
-		System.out.println(myVar3);
-		System.out.println(greeting);
+		//Print variables
+		System.out.println("Number of items: " + items);
+		System.out.println("Cost oer item: " + costPerItem + currency);
+		System.out.println("Total cost= "+ totalCost + currency);
 	}
 }
