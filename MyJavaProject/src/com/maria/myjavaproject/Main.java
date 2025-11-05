@@ -439,17 +439,28 @@ package com.maria.myjavaproject;
 //}
 
 //Java Comparison Operators
-public class Main{
+//public class Main{
+//	public static void main(String[] args) {
+//		int x = 5;
+//		int y = 3;
+//		System.out.println("x: " + x);
+//		System.out.println("y: "+y);
+//		System.out.println("x > y => "+(x > y)); //returns true
+//		System.out.println("x < y => "+(x < y)); //returns false
+//		System.out.println("x == y => "+(x == y)); //returns false
+//		System.out.println("x != y => "+(x != y)); //returns true
+//		System.out.println("x >= y => "+(x >= y)); //returns true
+//		System.out.println("x <= y => "+(x <= y)); //returns false
+//	}
+//}
+
+//Check voting age
+public class Main {
 	public static void main(String[] args) {
-		int x = 5;
-		int y = 3;
-		System.out.println("x: " + x);
-		System.out.println("y: "+y);
-		System.out.println("x > y => "+(x > y)); //returns true
-		System.out.println("x < y => "+(x < y)); //returns false
-		System.out.println("x == y => "+(x == y)); //returns false
-		System.out.println("x != y => "+(x != y)); //returns true
-		System.out.println("x >= y => "+(x >= y)); //returns true
-		System.out.println("x <= y => "+(x <= y)); //returns false
+		int age = 18;
+		
+		System.out.println("age: "+ age);
+		System.out.println("age >= 18 ? "+ (age>=18)); //true, old enough to vote
+		System.out.println("age < 18 ? " +(age < 18)); //false, not old enough
 	}
 }
