@@ -815,10 +815,30 @@ public class Main{
 	public static void main(String[] args) {
 		//variable = (condition) ? expressionTrue : expressionFalse;
 		int time = 20;
+		System.out.println("time: "+time);
 		if (time < 18) {
 			System.out.println("Good day.");
 		} else {
 			System.out.println("Good evening.");
-		}
+		} 
+		
+		//or
+		int time1 = 20;
+		System.out.println("time: "+ time1);
+		String result = (time1 < 18) ? "Good day. ": "Good evening. ";
+		System.out.println(result);
+		
+		//or
+		int time2 = 20;
+		System.out.println("time: "+ time2);
+		System.out.println((time2 < 18) ? "Good day.":"Good evening.");
+		
+		//
+		int time3 = 22;
+		System.out.println("time: "+time3);
+		String message = (time3 < 12) ? "Good morning"
+						:(time < 18)? "Good afternoon"
+						:"Good evening.";
+		System.out.println(message);
 	}
 }
