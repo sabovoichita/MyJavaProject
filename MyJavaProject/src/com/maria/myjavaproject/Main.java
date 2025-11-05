@@ -592,26 +592,50 @@ package com.maria.myjavaproject;
 //}
 
 //Java Numbers and Strings
-public class Main{
+//public class Main{
+//	public static void main(String[] args) {
+//		int x = 10;
+//		int y = 20;
+//		int z = x + y;
+//		System.out.println("x = " + x);
+//		System.out.println("y = " + y);
+//		System.out.println("z = x + y =>  "+ (z = x + y));
+//		String a = "10";
+//		String b = "20";
+//		String c = a + b;
+//		System.out.println("a = '10' => "+ a);
+//		System.out.println("b = '20' => "+ b);
+//		System.out.println("c = a + b => " + (c = a + b)); //1020
+//		
+//		String d = "10";
+//		int e = 20;
+//		String f = d + e;
+//		System.out.println("String d = '10' => "+ d);
+//		System.out.println("int e = 20; => " + e);
+//		System.out.println("String f = d + e =>" + (f = d + e)); // 1020
+//	}
+//}
+
+//Java Special Characters
+public class Main {
 	public static void main(String[] args) {
-		int x = 10;
-		int y = 20;
-		int z = x + y;
-		System.out.println("x = " + x);
-		System.out.println("y = " + y);
-		System.out.println("z = x + y =>  "+ (z = x + y));
-		String a = "10";
-		String b = "20";
-		String c = a + b;
-		System.out.println("a = '10' => "+ a);
-		System.out.println("b = '20' => "+ b);
-		System.out.println("c = a + b => " + (c = a + b)); //1020
+		String txt = "We are the so-called \"Vikings\" from the north.";
+		System.out.println("txt => "+txt);
 		
-		String d = "10";
-		int e = 20;
-		String f = d + e;
-		System.out.println("String d = '10' => "+ d);
-		System.out.println("int e = 20; => " + e);
-		System.out.println("String f = d + e =>" + (f = d + e)); // 1020
+		String txt1 = "It\'s alright";
+		System.out.println("txt1 => " + txt1);
+		
+		String txt2 = "The character \\ is called a backslash.";
+		System.out.println("txt2 => " + txt2);
+		
+		String txt3 = "Hello\nWorld!";
+		System.out.println("txt3 => " + txt3);
+		
+		String txt4 = "Hello\tWorld!";
+		System.out.println("txt4 => " + txt4);
+		
+		String txt5 = "Hel\blo World!";
+		System.out.println("txt5 => " + txt5);
+		
 	}
 }
