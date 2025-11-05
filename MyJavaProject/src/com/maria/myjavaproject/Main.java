@@ -994,13 +994,29 @@ package com.maria.myjavaproject;
 
 //Java If ... Else Examples
 //Find out if a number is even or odd
-public class Main{
+//public class Main{
+//	public static void main(String[] args) {
+//		int myNum = 7;
+//		if (myNum % 2 == 0) {
+//			System.out.println(myNum +" is even");
+//		} else {
+//			System.out.println(myNum + " is odd");
+//		}
+//	}
+//}
+
+//Java If ... Else Examples
+//Check temperature
+public class Main {
 	public static void main(String[] args) {
-		int myNum = 7;
-		if (myNum % 2 == 0) {
-			System.out.println(myNum +" is even");
+		int temperature = 30;
+		
+		if (temperature < 0) {
+			System.out.println("It's freezing🥶");
+		} else if (temperature > 20) {
+			System.out.println("It's cool.!😉");
 		} else {
-			System.out.println(myNum + " is odd");
+			System.out.println("It's warm 🥵");
 		}
 	}
 }
