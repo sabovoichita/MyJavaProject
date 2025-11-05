@@ -617,25 +617,52 @@ package com.maria.myjavaproject;
 //}
 
 //Java Special Characters
-public class Main {
+//public class Main {
+//	public static void main(String[] args) {
+//		String txt = "We are the so-called \"Vikings\" from the north.";
+//		System.out.println("txt => "+txt);
+//		
+//		String txt1 = "It\'s alright";
+//		System.out.println("txt1 => " + txt1);
+//		
+//		String txt2 = "The character \\ is called a backslash.";
+//		System.out.println("txt2 => " + txt2);
+//		
+//		String txt3 = "Hello\nWorld!";
+//		System.out.println("txt3 => " + txt3);
+//		
+//		String txt4 = "Hello\tWorld!";
+//		System.out.println("txt4 => " + txt4);
+//		
+//		String txt5 = "Hel\blo World!";
+//		System.out.println("txt5 => " + txt5);
+//		
+//	}
+//}
+
+//Java Math
+public class Main{
 	public static void main(String[] args) {
-		String txt = "We are the so-called \"Vikings\" from the north.";
-		System.out.println("txt => "+txt);
-		
-		String txt1 = "It\'s alright";
-		System.out.println("txt1 => " + txt1);
-		
-		String txt2 = "The character \\ is called a backslash.";
-		System.out.println("txt2 => " + txt2);
-		
-		String txt3 = "Hello\nWorld!";
-		System.out.println("txt3 => " + txt3);
-		
-		String txt4 = "Hello\tWorld!";
-		System.out.println("txt4 => " + txt4);
-		
-		String txt5 = "Hel\blo World!";
-		System.out.println("txt5 => " + txt5);
-		
+//Math.max(x, y) - can be used to find the highest value of x and y
+		System.out.println("Math.max(5, 10)=> " + Math.max(5, 10)); //10
+//Math.min(5, 10) - can be used to find the lowest value of x and y
+		System.out.println("Math.min(5, 10 => " + Math.min(5, 10) ); //5
+//Math.sqrt(x) - returns the square root of x
+		System.out.println("Math.sqrt(64) => " + Math.sqrt(64)); //8
+//Math.abs(x) - returns the absolute (positive) value of x
+		System.out.println("Math.abs(-4.7) => "+ Math.abs(-4.7)); //4.7
+//Math.pow(x, y) - returns the value of x raised to the power of y
+		System.out.println("Math.pow(2, 8) => " + Math.pow(2, 8)); //256.0
+//Math.round(x) - rounds to the nearest integer
+		System.out.println("Math.round(4.6) => "+ Math.round(4.6)); //5
+//Math.ceil(x) - rounds up (returns the smallest integer greater than or equal to x)
+		System.out.println("Math.ceil(4.1) => "+ Math.ceil(4.1)); //5.0
+//Math.floor(x) - rounds down (returns the largest integer less than or equal to x)
+		System.out.println("Math.floor(4.9) => "+ Math.floor(4.9)); //4.0
+//Math.random() returns a random number between 0.0 (inclusive), and 1.0 (exclusive)
+		System.out.println("math.random() => "+ Math.random()); // different values each time
+//Random value from 0 to 100: 
+		int randomNum = (int)(Math.random() * 100);
+		System.out.println("int randomNum = (int)(Math.random() * 100) => " + randomNum);
 	}
 }
