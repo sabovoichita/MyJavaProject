@@ -518,44 +518,75 @@ package com.maria.myjavaproject;
 //}
 
 //Java Strings
+//public class Main{
+//	public static void main(String[] args) {
+//		String greeting = "Hello";
+//		System.out.println("greeting: => "+greeting);
+//		
+////String length
+//		String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//		System.out.println("Stringtxt = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' => "+txt );
+//		System.out.println("The length of the txt string is: => " + txt.length());
+//		
+////The toUpperCase() method converts a string to upper case letters.
+////The toLowerCase() method converts a string to lower case letters.
+//		String txt1 = "Hello World";
+//		System.out.println("txt1 = 'Hello World' => " + txt1);
+//		System.out.println("txt1 to uppper case: => " + txt.toUpperCase());
+//		System.out.println("txt1 to lower case: => " + txt.toLowerCase());
+//		
+////Finding a Character in a String- returns the index (the position) of the first occurrence
+//		String txt2 = "Please locate where 'locate' occurs!";
+//		System.out.println("txt2: => " + txt2);
+//		System.out.println("txt.locate('locate') => "+ txt2
+//				.indexOf("locate")); //7
+////Access a character at a specific position in a string
+//		String txt3 = "Hello";
+//		System.out.println("txt3: => " + txt3);
+//		System.out.println("txt3.charAt(0) => "+txt3.charAt(0)); //H
+//		System.out.println("txt3.charAt(4) => "+txt3.charAt(4)); //o
+//		
+////Comparing Strings
+//		String txt4 = "Hello";
+//		String txt5 = "Hello";
+//		String txt6 = "Greetings";
+//		String txt7 = "Great things";
+//		System.out.println("txt4 ='Hello'; txt5 = 'Hello'; txt4 = txt5 => " + txt4.equals(txt5));
+//		System.out.println("txt6 = 'Greetings'; txt7 = 'Great things'; txt6 = txt7 => " + txt6.equals(txt7));
+////Removing Whitespace
+//		String txt8 = "    HelloWorld";
+//		System.out.println("Before trimming: [" + txt8 + "]");
+//		System.out.println("After trimming: [" + txt8.trim() + "]");
+//	}
+//}
+
+//Java String Concatenation
 public class Main{
 	public static void main(String[] args) {
-		String greeting = "Hello";
-		System.out.println("greeting: => "+greeting);
+		String firstName = "John";
+		String lastName = "Doe";
+		System.out.println("firstName: " + firstName);
+		System.out.println("lastName: " + lastName);
+		System.out.println(firstName + " " + lastName);
+//Concatenation in Sentences
+		String name = "John";
+		int age = 25;
+		System.out.println("name: => " + name);
+		System.out.println("age: => " + age);
+		System.out.println("My name is "+ name + " and I am " + age + " years old." );
+//The concat() Method
+		String firstName1 = "John ";
+		String lastName1 = "Doe";
+		System.out.println(firstName1.concat(lastName1));
 		
-//String length
-		String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		System.out.println("Stringtxt = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' => "+txt );
-		System.out.println("The length of the txt string is: => " + txt.length());
-		
-//The toUpperCase() method converts a string to upper case letters.
-//The toLowerCase() method converts a string to lower case letters.
-		String txt1 = "Hello World";
-		System.out.println("txt1 = 'Hello World' => " + txt1);
-		System.out.println("txt1 to uppper case: => " + txt.toUpperCase());
-		System.out.println("txt1 to lower case: => " + txt.toLowerCase());
-		
-//Finding a Character in a String- returns the index (the position) of the first occurrence
-		String txt2 = "Please locate where 'locate' occurs!";
-		System.out.println("txt2: => " + txt2);
-		System.out.println("txt.locate('locate') => "+ txt2
-				.indexOf("locate")); //7
-//Access a character at a specific position in a string
-		String txt3 = "Hello";
-		System.out.println("txt3: => " + txt3);
-		System.out.println("txt3.charAt(0) => "+txt3.charAt(0)); //H
-		System.out.println("txt3.charAt(4) => "+txt3.charAt(4)); //o
-		
-//Comparing Strings
-		String txt4 = "Hello";
-		String txt5 = "Hello";
-		String txt6 = "Greetings";
-		String txt7 = "Great things";
-		System.out.println("txt4 ='Hello'; txt5 = 'Hello'; txt4 = txt5 => " + txt4.equals(txt5));
-		System.out.println("txt6 = 'Greetings'; txt7 = 'Great things'; txt6 = txt7 => " + txt6.equals(txt7));
-//Removing Whitespace
-		String txt8 = "    HelloWorld";
-		System.out.println("Before trimming: [" + txt8 + "]");
-		System.out.println("After trimming: [" + txt8.trim() + "]");
+		String a = "Java ";
+		String b = "is ";
+		String c = "fun!";
+		String result = a.concat(b).concat(c);
+		System.out.println("a = 'Java ' => " + a);
+		System.out.println("b = 'is ' => " + b);
+		System.out.println("c = 'fun! => " + c);
+		System.out.println("Result = a.concat(b).concat(c); => "+ result);
+
 	}
 }
