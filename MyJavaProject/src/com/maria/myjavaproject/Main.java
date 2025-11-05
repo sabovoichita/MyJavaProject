@@ -942,17 +942,30 @@ package com.maria.myjavaproject;
 
 //Java If ... Else Examples
 //This example shows how you can use if..else to find out if a number is positive or negative
-public class Main {
+//public class Main {
+//	public static void main(String[] args) {
+//		int myNum = 10; //Is this a positive or negative number???
+//		
+//		if (myNum > 0) {
+//			System.out.println("The value is a positive number.");
+//		} else if (myNum < 0) {
+//			System.out.println("The value is a negative number.");
+//		} else {
+//			System.out.println("The value is 0.");
+//		}
+//	}
+//}
+
+//Java If ... Else Examples
+//Find out if a person is old enough to vote
+public class Main{
 	public static void main(String[] args) {
-		int myNum = 10; //Is this a positive or negative number???
-		
-		if (myNum > 0) {
-			System.out.println("The value is a positive number.");
-		} else if (myNum < 0) {
-			System.out.println("The value is a negative number.");
+		int myAge = 26;
+		int votingAge = 18;
+		if (myAge <= votingAge) {
+			System.out.println("Old enough to vote!");
 		} else {
-			System.out.println("The value is 0.");
+			System.out.println("Not old enought to vote.");
 		}
 	}
 }
-
