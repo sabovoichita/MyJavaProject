@@ -844,40 +844,99 @@ package com.maria.myjavaproject;
 //}
 
 //Java Nested If
+//public class Main{
+//	public static void main(String[] args) {
+//		/*
+//		 * if(condition1){
+//		 * //code to run if condition1 is true
+//		 * if(condition2{
+//		 * //code to run if both conditions are true
+//		 * }
+//		 * } 
+//		 * */
+//		int x = 15;
+//		int y = 25;
+//		if (x > 10) {
+//			System.out.println("x is greater than 10");
+//			//Nested if
+//			if(y > 20) {
+//				System.out.println("y is also greater than 20");
+//			}
+//		}
+//		//Example check if a person is old enough to vote and if they are a citizen
+//		int age = 20;
+//		boolean isCitizen = true;
+//		System.out.println("age: "+ age);
+//		if (age >= 18) {
+//			System.out.println("Old enough to vote.");
+//			if (isCitizen) {
+//				System.out.println("And you are a citizen, so you can vote!");
+//			} else {
+//				System.out.println("But you must be a citizen to vote.");
+//			}
+//		
+//		} else {
+//			System.out.println("Not old enought to vote.");
+//		}
+//	}
+//	
+//}
+
+//Java Logical Operators in Conditions
+//public class Main{
+//	public static void main(String[] args) {
+////AND (&&) when both conditions must be true
+//		int a = 200;
+//		int b = 33;
+//		int c = 500;
+//		System.out.println("a = " + a);
+//		System.out.println("b = " + b);
+//		System.out.println("c = " + c);
+//		if (a > b && c > a) {
+//			System.out.println("Both conditions are true");
+//		}
+////OR (||) when at least one of the conditions can be true
+//		if (a > b || a > c) {
+//			  System.out.println("At least one condition is true");
+//			}
+////NOT (!) to reverse a condition
+//		if (!(b > a)) {
+//			  System.out.println("b is NOT greater than a");
+//			}
+////For example, to get access to a system, there are specific requirements:
+////You must be logged in, and then you either need to be an admin,
+////or have a high security clearance (level 1 or 2):
+//		boolean isLoggedIn = true;
+//		boolean isAdmin = false;
+//		
+//		//Try changing securityLevel to test different outcomes:
+//		int securityLevel = 3; // 1 = highest
+////		int securityLevel = 1; // Access granted		
+////		int securityLevel = 2; // Access granted			
+//
+////		int securityLevel = 4; // Access granted
+////	    If isAdmin = true, access is granted.
+//		
+//		if(isLoggedIn && (isAdmin || securityLevel <= 2)){
+//			System.out.println("Access granted");	
+//		} else {
+//			System.out.println("Access denied");
+//		}
+//		
+//	}
+//}
+
+//Java If ... Else Examples
+//This example shows how you can use if..else to "open a door" 
+//if the user enters the correct code:
 public class Main{
 	public static void main(String[] args) {
-		/*
-		 * if(condition1){
-		 * //code to run if condition1 is true
-		 * if(condition2{
-		 * //code to run if both conditions are true
-		 * }
-		 * } 
-		 * */
-		int x = 15;
-		int y = 25;
-		if (x > 10) {
-			System.out.println("x is greater than 10");
-			//Nested if
-			if(y > 20) {
-				System.out.println("y is also greater than 20");
-			}
-		}
-		//Example check if a person is old enough to vote and if they are a citizen
-		int age = 20;
-		boolean isCitizen = true;
-		System.out.println("age: "+ age);
-		if (age >= 18) {
-			System.out.println("Old enough to vote.");
-			if (isCitizen) {
-				System.out.println("And you are a citizen, so you can vote!");
-			} else {
-				System.out.println("But you must be a citizen to vote.");
-			}
-		
+		int doorCode = 1337;
+		if (doorCode == 1337) {
+			System.out.println("Correct code! The door is now open.");
 		} else {
-			System.out.println("Not old enought to vote.");
+			System.out.println("Wrong code! The door remains closed.");
 		}
 	}
-	
 }
+
