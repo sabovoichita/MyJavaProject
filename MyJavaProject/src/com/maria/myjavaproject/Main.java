@@ -641,28 +641,59 @@ package com.maria.myjavaproject;
 //}
 
 //Java Math
-public class Main{
+//public class Main{
+//	public static void main(String[] args) {
+////Math.max(x, y) - can be used to find the highest value of x and y
+//		System.out.println("Math.max(5, 10)=> " + Math.max(5, 10)); //10
+////Math.min(5, 10) - can be used to find the lowest value of x and y
+//		System.out.println("Math.min(5, 10 => " + Math.min(5, 10) ); //5
+////Math.sqrt(x) - returns the square root of x
+//		System.out.println("Math.sqrt(64) => " + Math.sqrt(64)); //8
+////Math.abs(x) - returns the absolute (positive) value of x
+//		System.out.println("Math.abs(-4.7) => "+ Math.abs(-4.7)); //4.7
+////Math.pow(x, y) - returns the value of x raised to the power of y
+//		System.out.println("Math.pow(2, 8) => " + Math.pow(2, 8)); //256.0
+////Math.round(x) - rounds to the nearest integer
+//		System.out.println("Math.round(4.6) => "+ Math.round(4.6)); //5
+////Math.ceil(x) - rounds up (returns the smallest integer greater than or equal to x)
+//		System.out.println("Math.ceil(4.1) => "+ Math.ceil(4.1)); //5.0
+////Math.floor(x) - rounds down (returns the largest integer less than or equal to x)
+//		System.out.println("Math.floor(4.9) => "+ Math.floor(4.9)); //4.0
+////Math.random() returns a random number between 0.0 (inclusive), and 1.0 (exclusive)
+//		System.out.println("math.random() => "+ Math.random()); // different values each time
+////Random value from 0 to 100: 
+//		int randomNum = (int)(Math.random() * 100);
+//		System.out.println("int randomNum = (int)(Math.random() * 100) => " + randomNum);
+//	}
+//}
+
+//Java Booleans
+public class Main {
 	public static void main(String[] args) {
-//Math.max(x, y) - can be used to find the highest value of x and y
-		System.out.println("Math.max(5, 10)=> " + Math.max(5, 10)); //10
-//Math.min(5, 10) - can be used to find the lowest value of x and y
-		System.out.println("Math.min(5, 10 => " + Math.min(5, 10) ); //5
-//Math.sqrt(x) - returns the square root of x
-		System.out.println("Math.sqrt(64) => " + Math.sqrt(64)); //8
-//Math.abs(x) - returns the absolute (positive) value of x
-		System.out.println("Math.abs(-4.7) => "+ Math.abs(-4.7)); //4.7
-//Math.pow(x, y) - returns the value of x raised to the power of y
-		System.out.println("Math.pow(2, 8) => " + Math.pow(2, 8)); //256.0
-//Math.round(x) - rounds to the nearest integer
-		System.out.println("Math.round(4.6) => "+ Math.round(4.6)); //5
-//Math.ceil(x) - rounds up (returns the smallest integer greater than or equal to x)
-		System.out.println("Math.ceil(4.1) => "+ Math.ceil(4.1)); //5.0
-//Math.floor(x) - rounds down (returns the largest integer less than or equal to x)
-		System.out.println("Math.floor(4.9) => "+ Math.floor(4.9)); //4.0
-//Math.random() returns a random number between 0.0 (inclusive), and 1.0 (exclusive)
-		System.out.println("math.random() => "+ Math.random()); // different values each time
-//Random value from 0 to 100: 
-		int randomNum = (int)(Math.random() * 100);
-		System.out.println("int randomNum = (int)(Math.random() * 100) => " + randomNum);
+//Boolean Values
+		boolean isJavaFun = true;
+		boolean isFishTasty = false;
+		System.out.println("isJavaFun = true => " + isJavaFun); 
+		System.out.println("isFishTasty = false => "+ isFishTasty);
+//Boolean Expressions
+		int x = 10;
+		int y = 9;
+		System.out.println("x = " + x);
+		System.out.println(" y = " + y);
+		System.out.println("x > y => " + (x > y));
+		System.out.println("10 > 9 => " + (10 > 9));
+		System.out.println("x == 10 => " + (x == 10));
+		System.out.println("10 == 15 => " + (10 == 15) );
+//Old enough to vote
+		int myAge = 25;
+		int votingAge = 18;
+		System.out.println("myAge = " + myAge);
+		System.out.println("votingAge = " + votingAge);
+		System.out.println("myAge >= votingAge => " + (myAge >= votingAge));
+		if(myAge >= votingAge) {
+			System.out.println("Old enough to vote!");
+		} else {
+			System.out.println("Not old enoough to vote.");
+		}
 	}
 }
