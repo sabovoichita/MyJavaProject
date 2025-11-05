@@ -561,32 +561,57 @@ package com.maria.myjavaproject;
 //}
 
 //Java String Concatenation
+//public class Main{
+//	public static void main(String[] args) {
+//		String firstName = "John";
+//		String lastName = "Doe";
+//		System.out.println("firstName: " + firstName);
+//		System.out.println("lastName: " + lastName);
+//		System.out.println(firstName + " " + lastName);
+////Concatenation in Sentences
+//		String name = "John";
+//		int age = 25;
+//		System.out.println("name: => " + name);
+//		System.out.println("age: => " + age);
+//		System.out.println("My name is "+ name + " and I am " + age + " years old." );
+////The concat() Method
+//		String firstName1 = "John ";
+//		String lastName1 = "Doe";
+//		System.out.println(firstName1.concat(lastName1));
+//		
+//		String a = "Java ";
+//		String b = "is ";
+//		String c = "fun!";
+//		String result = a.concat(b).concat(c);
+//		System.out.println("a = 'Java ' => " + a);
+//		System.out.println("b = 'is ' => " + b);
+//		System.out.println("c = 'fun! => " + c);
+//		System.out.println("Result = a.concat(b).concat(c); => "+ result);
+//
+//	}
+//}
+
+//Java Numbers and Strings
 public class Main{
 	public static void main(String[] args) {
-		String firstName = "John";
-		String lastName = "Doe";
-		System.out.println("firstName: " + firstName);
-		System.out.println("lastName: " + lastName);
-		System.out.println(firstName + " " + lastName);
-//Concatenation in Sentences
-		String name = "John";
-		int age = 25;
-		System.out.println("name: => " + name);
-		System.out.println("age: => " + age);
-		System.out.println("My name is "+ name + " and I am " + age + " years old." );
-//The concat() Method
-		String firstName1 = "John ";
-		String lastName1 = "Doe";
-		System.out.println(firstName1.concat(lastName1));
+		int x = 10;
+		int y = 20;
+		int z = x + y;
+		System.out.println("x = " + x);
+		System.out.println("y = " + y);
+		System.out.println("z = x + y =>  "+ (z = x + y));
+		String a = "10";
+		String b = "20";
+		String c = a + b;
+		System.out.println("a = '10' => "+ a);
+		System.out.println("b = '20' => "+ b);
+		System.out.println("c = a + b => " + (c = a + b)); //1020
 		
-		String a = "Java ";
-		String b = "is ";
-		String c = "fun!";
-		String result = a.concat(b).concat(c);
-		System.out.println("a = 'Java ' => " + a);
-		System.out.println("b = 'is ' => " + b);
-		System.out.println("c = 'fun! => " + c);
-		System.out.println("Result = a.concat(b).concat(c); => "+ result);
-
+		String d = "10";
+		int e = 20;
+		String f = d + e;
+		System.out.println("String d = '10' => "+ d);
+		System.out.println("int e = 20; => " + e);
+		System.out.println("String f = d + e =>" + (f = d + e)); // 1020
 	}
 }
