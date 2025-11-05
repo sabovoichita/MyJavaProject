@@ -1007,16 +1007,40 @@ package com.maria.myjavaproject;
 
 //Java If ... Else Examples
 //Check temperature
+//public class Main {
+//	public static void main(String[] args) {
+//		int temperature = 30;
+//		
+//		if (temperature < 0) {
+//			System.out.println("It's freezing🥶");
+//		} else if (temperature > 20) {
+//			System.out.println("It's cool.!😉");
+//		} else {
+//			System.out.println("It's warm 🥵");
+//		}
+//	}
+//}
+
+//Java If ... Else Examples
+//System access control example - You must be logged in, 
+//and then you either need to be an admin, or have a high security clearance 
+//(level 1 or 2) to get access
 public class Main {
 	public static void main(String[] args) {
-		int temperature = 30;
+		boolean isLoggedIn = true;
+		boolean isAdmin = false;
+		int securityLevel = 3;  //1 = highest
+		// Try changing securityLevel to test different outcomes:
+//		int securityLevel = 1;  
+//		int securityLevel = 2;  
+//		int securityLevel = 4;  
 		
-		if (temperature < 0) {
-			System.out.println("It's freezing🥶");
-		} else if (temperature > 20) {
-			System.out.println("It's cool.!😉");
+		// If isAdmin = true, access is granted.
+		
+		if (isLoggedIn && (isAdmin || securityLevel <= 2)) {
+			System.out.println("Access granted");
 		} else {
-			System.out.println("It's warm 🥵");
+			System.out.println("Access denied");
 		}
 	}
 }
