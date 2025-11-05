@@ -668,32 +668,74 @@ package com.maria.myjavaproject;
 //}
 
 //Java Booleans
-public class Main {
+//public class Main {
+//	public static void main(String[] args) {
+////Boolean Values
+//		boolean isJavaFun = true;
+//		boolean isFishTasty = false;
+//		System.out.println("isJavaFun = true => " + isJavaFun); 
+//		System.out.println("isFishTasty = false => "+ isFishTasty);
+////Boolean Expressions
+//		int x = 10;
+//		int y = 9;
+//		System.out.println("x = " + x);
+//		System.out.println(" y = " + y);
+//		System.out.println("x > y => " + (x > y));
+//		System.out.println("10 > 9 => " + (10 > 9));
+//		System.out.println("x == 10 => " + (x == 10));
+//		System.out.println("10 == 15 => " + (10 == 15) );
+////Old enough to vote
+//		int myAge = 25;
+//		int votingAge = 18;
+//		System.out.println("myAge = " + myAge);
+//		System.out.println("votingAge = " + votingAge);
+//		System.out.println("myAge >= votingAge => " + (myAge >= votingAge));
+//		if(myAge >= votingAge) {
+//			System.out.println("Old enough to vote!");
+//		} else {
+//			System.out.println("Not old enoough to vote.");
+//		}
+//	}
+//}
+
+
+//Java If...Else
+public class Main{
 	public static void main(String[] args) {
-//Boolean Values
-		boolean isJavaFun = true;
-		boolean isFishTasty = false;
-		System.out.println("isJavaFun = true => " + isJavaFun); 
-		System.out.println("isFishTasty = false => "+ isFishTasty);
-//Boolean Expressions
-		int x = 10;
-		int y = 9;
-		System.out.println("x = " + x);
-		System.out.println(" y = " + y);
-		System.out.println("x > y => " + (x > y));
-		System.out.println("10 > 9 => " + (10 > 9));
-		System.out.println("x == 10 => " + (x == 10));
-		System.out.println("10 == 15 => " + (10 == 15) );
-//Old enough to vote
-		int myAge = 25;
-		int votingAge = 18;
-		System.out.println("myAge = " + myAge);
-		System.out.println("votingAge = " + votingAge);
-		System.out.println("myAge >= votingAge => " + (myAge >= votingAge));
-		if(myAge >= votingAge) {
-			System.out.println("Old enough to vote!");
-		} else {
-			System.out.println("Not old enoough to vote.");
+		boolean isRaining = true;
+		if(isRaining) {
+			// block of code to be executed if the condition is true
+			System.out.println("Bring an umbrella!");
 		}
+		
+		if (20> 18) {
+			System.out.println("20 is greater than 18");
+		}
+		
+		int x = 20;
+		int y = 18;
+		if (x > y) {
+			System.out.println("x is greater than y");
+		}
+		
+		int x1 = 20;
+		int y1 = 20;
+		if (x1 == y1) {
+		System.out.println("x1 is equl to y1");
 	}
+		boolean isLightOn = true;
+		if(isLightOn) {
+			System.out.println("The light is on.");
+		}
+		boolean isLightOn1 = false;
+		if(isLightOn1) {
+			System.out.println("The light is on.");
+		}
+		System.out.println("This line runs no matter what, because it is outside the if");
+		
+		if (x > y) {
+			System.out.println("x is greater than y");
+			System.out.println("Both lines are part of the if");
+		}
+}
 }
