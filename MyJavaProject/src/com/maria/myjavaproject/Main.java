@@ -700,42 +700,68 @@ package com.maria.myjavaproject;
 
 
 //Java If...Else
+//public class Main{
+//	public static void main(String[] args) {
+//		boolean isRaining = true;
+//		if(isRaining) {
+//			// block of code to be executed if the condition is true
+//			System.out.println("Bring an umbrella!");
+//		}
+//		
+//		if (20> 18) {
+//			System.out.println("20 is greater than 18");
+//		}
+//		
+//		int x = 20;
+//		int y = 18;
+//		if (x > y) {
+//			System.out.println("x is greater than y");
+//		}
+//		
+//		int x1 = 20;
+//		int y1 = 20;
+//		if (x1 == y1) {
+//		System.out.println("x1 is equl to y1");
+//	}
+//		boolean isLightOn = true;
+//		if(isLightOn) {
+//			System.out.println("The light is on.");
+//		}
+//		boolean isLightOn1 = false;
+//		if(isLightOn1) {
+//			System.out.println("The light is on.");
+//		}
+//		System.out.println("This line runs no matter what, because it is outside the if");
+//		
+//		if (x > y) {
+//			System.out.println("x is greater than y");
+//			System.out.println("Both lines are part of the if");
+//		}
+//}
+//}
+
+//Java If ... Else
 public class Main{
 	public static void main(String[] args) {
-		boolean isRaining = true;
-		if(isRaining) {
+/*		if(condition) {
 			// block of code to be executed if the condition is true
-			System.out.println("Bring an umbrella!");
+		} else {
+			// block of code to be executed if the condition is false
+		}	*/
+		
+		boolean isRaining = false;
+		if (isRaining) {
+			System.out.println("Bring an umnbrella!");
+		} else {
+			System.out.println("No rain today, no need for an umbrella!");
 		}
 		
-		if (20> 18) {
-			System.out.println("20 is greater than 18");
+		int time = 20;
+		if (time < 18) {
+			System.out.println("Good day.");
+		} else {
+			System.out.println("Good evening.");
 		}
-		
-		int x = 20;
-		int y = 18;
-		if (x > y) {
-			System.out.println("x is greater than y");
-		}
-		
-		int x1 = 20;
-		int y1 = 20;
-		if (x1 == y1) {
-		System.out.println("x1 is equl to y1");
 	}
-		boolean isLightOn = true;
-		if(isLightOn) {
-			System.out.println("The light is on.");
-		}
-		boolean isLightOn1 = false;
-		if(isLightOn1) {
-			System.out.println("The light is on.");
-		}
-		System.out.println("This line runs no matter what, because it is outside the if");
-		
-		if (x > y) {
-			System.out.println("x is greater than y");
-			System.out.println("Both lines are part of the if");
-		}
-}
+
 }
