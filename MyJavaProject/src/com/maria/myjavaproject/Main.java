@@ -466,12 +466,24 @@ package com.maria.myjavaproject;
 //}
 
 //Check if password is long enough
+//public class Main {
+//	public static void main(String[] args) {
+//		int passwordLength = 5;
+//		
+//		System.out.println("password length: "+ passwordLength);
+//		System.out.println("password length >= 8 ? "+ (passwordLength >= 8));
+//		System.out.println("password length < 8 ? " + (passwordLength < 8));
+//	}
+//}
+
+//Java Logical Operators
 public class Main {
 	public static void main(String[] args) {
-		int passwordLength = 5;
+		int x = 5;
 		
-		System.out.println("password length: "+ passwordLength);
-		System.out.println("password length >= 8 ? "+ (passwordLength >= 8));
-		System.out.println("password length < 8 ? " + (passwordLength < 8));
+		System.out.println("x = "+ x);
+		System.out.println("x > 3 && x < 10 => " + (x > 3 && x < 10)); //true
+		System.out.println("x > 3 || x < 4 => " + (x > 3 || x < 4)); //true
+		System.out.println("!(x > 3 && x < 10) => " + !(x > 3 && x < 10)); //false - result reversed
 	}
 }
