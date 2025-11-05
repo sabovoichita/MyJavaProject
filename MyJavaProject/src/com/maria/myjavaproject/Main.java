@@ -489,15 +489,30 @@ package com.maria.myjavaproject;
 //}
 
 //Login Check
-public class Main{
+//public class Main{
+//	public static void main(String[] args) {
+//		boolean isLoggedIn = true;
+//		boolean isAdmin = false;
+//		
+//		System.out.println("isLoggedIn ? => " + isLoggedIn);
+//		System.out.println("isAdmin ? => " + isAdmin);
+//		System.out.println("Regular user: => " + (isLoggedIn && !isAdmin)); //true
+//		System.out.println("Has access: => " + (isLoggedIn || isAdmin)) ; //true
+//		System.out.println("Not logged in: => " + (!isLoggedIn)); //false
+//	}
+//}
+
+//Java Operator Precedence
+public class Main {
 	public static void main(String[] args) {
-		boolean isLoggedIn = true;
-		boolean isAdmin = false;
-		
-		System.out.println("isLoggedIn ? => " + isLoggedIn);
-		System.out.println("isAdmin ? => " + isAdmin);
-		System.out.println("Regular user: => " + (isLoggedIn && !isAdmin)); //true
-		System.out.println("Has access: => " + (isLoggedIn || isAdmin)) ; //true
-		System.out.println("Not logged in: => " + (!isLoggedIn)); //false
+	int result1 = 2 + 3 * 4; // 2 + 12 = 14
+	int result2 = (2 + 3) *4; // 5 * 4 = 20
+	int result3 = 10 - 2 + 5; // (10 - 2) + 5 = 13
+	int result4 = 10 - (2 + 5); // 10 - 7 = 3
+	
+	System.out.println("int result1 = 2 + 3 * 4 => " + result1);
+	System.out.println("int result2 = (2 + 3) * 4 => " + result2);
+	System.out.println("int result3 = 10 - 2 + 5 => " + result3);
+	System.out.println("int result3 = 10 - (2 + 5) => " + result4);
 	}
 }
