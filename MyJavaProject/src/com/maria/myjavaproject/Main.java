@@ -929,13 +929,29 @@ package com.maria.myjavaproject;
 //Java If ... Else Examples
 //This example shows how you can use if..else to "open a door" 
 //if the user enters the correct code:
-public class Main{
+//public class Main{
+//	public static void main(String[] args) {
+//		int doorCode = 1337;
+//		if (doorCode == 1337) {
+//			System.out.println("Correct code! The door is now open.");
+//		} else {
+//			System.out.println("Wrong code! The door remains closed.");
+//		}
+//	}
+//}
+
+//Java If ... Else Examples
+//This example shows how you can use if..else to find out if a number is positive or negative
+public class Main {
 	public static void main(String[] args) {
-		int doorCode = 1337;
-		if (doorCode == 1337) {
-			System.out.println("Correct code! The door is now open.");
+		int myNum = 10; //Is this a positive or negative number???
+		
+		if (myNum > 0) {
+			System.out.println("The value is a positive number.");
+		} else if (myNum < 0) {
+			System.out.println("The value is a negative number.");
 		} else {
-			System.out.println("Wrong code! The door remains closed.");
+			System.out.println("The value is 0.");
 		}
 	}
 }
