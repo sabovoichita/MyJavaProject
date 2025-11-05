@@ -430,10 +430,26 @@ package com.maria.myjavaproject;
 //}
 
 //Tracking Savings
+//public class Main{
+//	public static void main(String[] args) {
+//		int savings = 100;
+//		savings += 50; //add 50 to savings
+//		System.out.println("Total savings: " + savings); //150
+//	}
+//}
+
+//Java Comparison Operators
 public class Main{
 	public static void main(String[] args) {
-		int savings = 100;
-		savings += 50; //add 50 to savings
-		System.out.println("Total savings: " + savings); //150
+		int x = 5;
+		int y = 3;
+		System.out.println("x: " + x);
+		System.out.println("y: "+y);
+		System.out.println("x > y => "+(x > y)); //returns true
+		System.out.println("x < y => "+(x < y)); //returns false
+		System.out.println("x == y => "+(x == y)); //returns false
+		System.out.println("x != y => "+(x != y)); //returns true
+		System.out.println("x >= y => "+(x >= y)); //returns true
+		System.out.println("x <= y => "+(x <= y)); //returns false
 	}
 }
