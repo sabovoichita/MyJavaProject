@@ -477,13 +477,27 @@ package com.maria.myjavaproject;
 //}
 
 //Java Logical Operators
-public class Main {
+//public class Main {
+//	public static void main(String[] args) {
+//		int x = 5;
+//		
+//		System.out.println("x = "+ x);
+//		System.out.println("x > 3 && x < 10 => " + (x > 3 && x < 10)); //true
+//		System.out.println("x > 3 || x < 4 => " + (x > 3 || x < 4)); //true
+//		System.out.println("!(x > 3 && x < 10) => " + !(x > 3 && x < 10)); //false - result reversed
+//	}
+//}
+
+//Login Check
+public class Main{
 	public static void main(String[] args) {
-		int x = 5;
+		boolean isLoggedIn = true;
+		boolean isAdmin = false;
 		
-		System.out.println("x = "+ x);
-		System.out.println("x > 3 && x < 10 => " + (x > 3 && x < 10)); //true
-		System.out.println("x > 3 || x < 4 => " + (x > 3 || x < 4)); //true
-		System.out.println("!(x > 3 && x < 10) => " + !(x > 3 && x < 10)); //false - result reversed
+		System.out.println("isLoggedIn ? => " + isLoggedIn);
+		System.out.println("isAdmin ? => " + isAdmin);
+		System.out.println("Regular user: => " + (isLoggedIn && !isAdmin)); //true
+		System.out.println("Has access: => " + (isLoggedIn || isAdmin)) ; //true
+		System.out.println("Not logged in: => " + (!isLoggedIn)); //false
 	}
 }
