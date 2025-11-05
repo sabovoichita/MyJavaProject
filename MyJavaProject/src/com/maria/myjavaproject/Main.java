@@ -741,27 +741,71 @@ package com.maria.myjavaproject;
 //}
 
 //Java If ... Else
+//public class Main{
+//	public static void main(String[] args) {
+///*		if(condition) {
+//			// block of code to be executed if the condition is true
+//		} else {
+//			// block of code to be executed if the condition is false
+//		}	*/
+//		
+//		boolean isRaining = false;
+//		if (isRaining) {
+//			System.out.println("Bring an umnbrella!");
+//		} else {
+//			System.out.println("No rain today, no need for an umbrella!");
+//		}
+//		
+//		int time = 20;
+//		if (time < 18) {
+//			System.out.println("Good day.");
+//		} else {
+//			System.out.println("Good evening.");
+//		}
+//	}
+//
+//}
+
+//Java Else If
 public class Main{
 	public static void main(String[] args) {
-/*		if(condition) {
-			// block of code to be executed if the condition is true
+		/*
+		 * if (condition){
+		 *  // block of code to be executed if condition1 is true
+		 *  } else if (condition) {
+		 *  // block of code to be executed if the condition1 is false and condition2 is true
+		 *  } else {
+		 *  // block of code to be executed if the condition1 is false and condition2 is false
+		 *  }
+		 *   */
+
+		int weather = 2; // 1= raining, 2 = sunny, 3 = cloudy
+		if (weather == 1) {
+			System.out.println("Bring an umbrella.");
+		} else if (weather == 2){
+			System.out.println("Wear sunglasses.");
 		} else {
-			// block of code to be executed if the condition is false
-		}	*/
-		
-		boolean isRaining = false;
-		if (isRaining) {
-			System.out.println("Bring an umnbrella!");
-		} else {
-			System.out.println("No rain today, no need for an umbrella!");
+			System.out.println("Just go outside normally.");
 		}
 		
-		int time = 20;
-		if (time < 18) {
+		int time = 22;
+		System.out.println("The time is: " + time + " o'clock");
+		if (time < 10) {
+			System.out.println("Good morning.");
+		} else if (time < 18) {
+			System.out.println("Good day.");
+		} else {
+			System.out.println("Good evening.");
+		}
+		
+		int time1 = 14;
+		System.out.println("The time is: " + time1 + " o'clock");
+		if (time1 < 10) {
+			System.out.println("Good morning.");
+		} else if (time1 < 18){
 			System.out.println("Good day.");
 		} else {
 			System.out.println("Good evening.");
 		}
 	}
-
 }
