@@ -455,12 +455,23 @@ package com.maria.myjavaproject;
 //}
 
 //Check voting age
+//public class Main {
+//	public static void main(String[] args) {
+//		int age = 18;
+//		
+//		System.out.println("age: "+ age);
+//		System.out.println("age >= 18 ? "+ (age>=18)); //true, old enough to vote
+//		System.out.println("age < 18 ? " +(age < 18)); //false, not old enough
+//	}
+//}
+
+//Check if password is long enough
 public class Main {
 	public static void main(String[] args) {
-		int age = 18;
+		int passwordLength = 5;
 		
-		System.out.println("age: "+ age);
-		System.out.println("age >= 18 ? "+ (age>=18)); //true, old enough to vote
-		System.out.println("age < 18 ? " +(age < 18)); //false, not old enough
+		System.out.println("password length: "+ passwordLength);
+		System.out.println("password length >= 8 ? "+ (passwordLength >= 8));
+		System.out.println("password length < 8 ? " + (passwordLength < 8));
 	}
 }
