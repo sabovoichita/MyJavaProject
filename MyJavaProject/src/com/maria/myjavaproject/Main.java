@@ -811,34 +811,73 @@ package com.maria.myjavaproject;
 //}
 
 //Java Short Hand If...Else (Ternary Operator)
+//public class Main{
+//	public static void main(String[] args) {
+//		//variable = (condition) ? expressionTrue : expressionFalse;
+//		int time = 20;
+//		System.out.println("time: "+time);
+//		if (time < 18) {
+//			System.out.println("Good day.");
+//		} else {
+//			System.out.println("Good evening.");
+//		} 
+//		
+//		//or
+//		int time1 = 20;
+//		System.out.println("time: "+ time1);
+//		String result = (time1 < 18) ? "Good day. ": "Good evening. ";
+//		System.out.println(result);
+//		
+//		//or
+//		int time2 = 20;
+//		System.out.println("time: "+ time2);
+//		System.out.println((time2 < 18) ? "Good day.":"Good evening.");
+//		
+//		//
+//		int time3 = 22;
+//		System.out.println("time: "+time3);
+//		String message = (time3 < 12) ? "Good morning"
+//						:(time < 18)? "Good afternoon"
+//						:"Good evening.";
+//		System.out.println(message);
+//	}
+//}
+
+//Java Nested If
 public class Main{
 	public static void main(String[] args) {
-		//variable = (condition) ? expressionTrue : expressionFalse;
-		int time = 20;
-		System.out.println("time: "+time);
-		if (time < 18) {
-			System.out.println("Good day.");
+		/*
+		 * if(condition1){
+		 * //code to run if condition1 is true
+		 * if(condition2{
+		 * //code to run if both conditions are true
+		 * }
+		 * } 
+		 * */
+		int x = 15;
+		int y = 25;
+		if (x > 10) {
+			System.out.println("x is greater than 10");
+			//Nested if
+			if(y > 20) {
+				System.out.println("y is also greater than 20");
+			}
+		}
+		//Example check if a person is old enough to vote and if they are a citizen
+		int age = 20;
+		boolean isCitizen = true;
+		System.out.println("age: "+ age);
+		if (age >= 18) {
+			System.out.println("Old enough to vote.");
+			if (isCitizen) {
+				System.out.println("And you are a citizen, so you can vote!");
+			} else {
+				System.out.println("But you must be a citizen to vote.");
+			}
+		
 		} else {
-			System.out.println("Good evening.");
-		} 
-		
-		//or
-		int time1 = 20;
-		System.out.println("time: "+ time1);
-		String result = (time1 < 18) ? "Good day. ": "Good evening. ";
-		System.out.println(result);
-		
-		//or
-		int time2 = 20;
-		System.out.println("time: "+ time2);
-		System.out.println((time2 < 18) ? "Good day.":"Good evening.");
-		
-		//
-		int time3 = 22;
-		System.out.println("time: "+time3);
-		String message = (time3 < 12) ? "Good morning"
-						:(time < 18)? "Good afternoon"
-						:"Good evening.";
-		System.out.println(message);
+			System.out.println("Not old enought to vote.");
+		}
 	}
+	
 }
