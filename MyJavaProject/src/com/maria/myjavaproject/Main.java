@@ -1025,22 +1025,56 @@ package com.maria.myjavaproject;
 //System access control example - You must be logged in, 
 //and then you either need to be an admin, or have a high security clearance 
 //(level 1 or 2) to get access
-public class Main {
+//public class Main {
+//	public static void main(String[] args) {
+//		boolean isLoggedIn = true;
+//		boolean isAdmin = false;
+//		int securityLevel = 3;  //1 = highest
+//		// Try changing securityLevel to test different outcomes:
+////		int securityLevel = 1;  
+////		int securityLevel = 2;  
+////		int securityLevel = 4;  
+//		
+//		// If isAdmin = true, access is granted.
+//		
+//		if (isLoggedIn && (isAdmin || securityLevel <= 2)) {
+//			System.out.println("Access granted");
+//		} else {
+//			System.out.println("Access denied");
+//		}
+//	}
+//}
+
+//Java Switch Statements
+public class Main{
 	public static void main(String[] args) {
-		boolean isLoggedIn = true;
-		boolean isAdmin = false;
-		int securityLevel = 3;  //1 = highest
-		// Try changing securityLevel to test different outcomes:
-//		int securityLevel = 1;  
-//		int securityLevel = 2;  
-//		int securityLevel = 4;  
-		
-		// If isAdmin = true, access is granted.
-		
-		if (isLoggedIn && (isAdmin || securityLevel <= 2)) {
-			System.out.println("Access granted");
-		} else {
-			System.out.println("Access denied");
+		int day = 4;
+		switch (day) {
+		case 1:
+		System.out.println("Monday");
+		break;
+		case 2:
+		System.out.println("Tuesday");
+		break;
+		case 3:
+		System.out.println("Wednesday");
+		break;
+		case 4:
+		System.out.println("Thursday");
+		break;
+		case 5:
+		System.out.println("Friday");
+		break;
+		case 6:
+		System.out.println("Saturday");
+		break;
+		case 7:
+		System.out.println("Sunday");
+		break;
+		default:
+			System.out.println("Looking forward to the Weekend");
+			break;
+			
 		}
 	}
 }
